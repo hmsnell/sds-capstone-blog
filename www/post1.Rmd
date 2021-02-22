@@ -22,5 +22,5 @@ knitr::include_graphics("images/yeshimilner.jpg")
 ```
 
 The existence of projects like The Center for Humane Technology is critical for shining a light on the power of the companies that have such data collection and surveillance tactics. In addition to The Center for Humane Technology, Yeshimabeit Milner's *Data 4 Black Lives*^[https://d4bl.org/about.html] has been pivotal in the challenge of disarming Big Data and the direct impact it has on Black communities. Work like this is pushing the needed systemic change to put an end to 
-uncontrolled and unregulated deviciveness of these automated systems.  
+uncontrolled and unregulated divisiveness of these automated systems.  
 
