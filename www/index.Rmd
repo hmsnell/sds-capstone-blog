@@ -11,6 +11,6 @@ output:
 #### I will be using this site for my personal blog posts documenting my journey through Catherine D’Ignazio and Lauren F. Klein's *Data Feminism*.  
 
 ```{r, echo = FALSE, out.width = '50%', fig.align = 'center'}
-knitr::include_graphics("images/datafeminism.png")
+knitr::include_graphics("images/datafeminism.jpg")
 ```
 
