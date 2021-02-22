@@ -10,16 +10,25 @@
 
 
 
+<meta name="date" content="2021-02-21" />
 
-<title>My first story</title>
+<title>The Social Dilemma</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -39,32 +48,6 @@
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
 
@@ -75,10 +58,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -95,40 +74,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 54px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 59px;
-  margin-top: -59px;
-}
-.section h2 {
-  padding-top: 59px;
-  margin-top: -59px;
-}
-.section h3 {
-  padding-top: 59px;
-  margin-top: -59px;
-}
-.section h4 {
-  padding-top: 59px;
-  margin-top: -59px;
-}
-.section h5 {
-  padding-top: 59px;
-  margin-top: -59px;
-}
-.section h6 {
-  padding-top: 59px;
-  margin-top: -59px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -156,7 +108,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -168,7 +120,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -179,10 +131,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -194,7 +159,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -320,13 +284,13 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
+<div class="row">
+<div class="col-sm-12 col-md-4 col-lg-3">
 <div id="TOC" class="tocify">
 </div>
 </div>
 
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+<div class="toc-content col-sm-12 col-md-8 col-lg-9">
 
 
 
@@ -339,7 +303,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Your Name</a>
+      <a class="navbar-brand" href="index.html">Hannah Snell</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -377,25 +341,19 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="mailto:bbaumer@smith.edu">
+  <a href="mailto:hsnell@smith.edu">
     <span class="fas fa-envelope"></span>
      
   </a>
 </li>
 <li>
-  <a href="http://www.github.com/beanumber">
+  <a href="http://www.github.com/hmsnell">
     <span class="fas fa-github"></span>
      
   </a>
 </li>
 <li>
-  <a href="http://www.twitter.com/BaumerBen">
-    <span class="fas fa-twitter"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://www.linkedin.com/in/ben-baumer-809b3a75">
+  <a href="https://www.linkedin.com/in/hannahsnell">
     <span class="fas fa-linkedin"></span>
      
   </a>
@@ -405,16 +363,34 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
-<h1 class="title toc-ignore">My first story</h1>
+<h1 class="title toc-ignore">The Social Dilemma</h1>
+<h4 class="date">February 21, 2021</h4>
 
 </div>
 
 
-<p>It was a dark and stormy night…</p>
+<p>D’Ignazio and Klein’s introduction to <em>Data Feminism</em> describes the ominous trajectory of how economic, civic, and individual decisions are increasingly being made by automated systems. While there is convenience and efficiency that results of this, the consequences weigh more: many of these automated systems continue to hurt minoritized groups on a global scale (what D’Ignazio and Klein call a (<strong>double-edged sword</strong>)<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p><img src="images/algorithm.jpg" width="30%" style="float:right; padding:10px" /></p>
+<p>Following a similar narrative, the documentary-drama hybrid titled <em>The Social Dilemma</em><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> contains a series of charged interviews from ex-Silicon Valley tech executives of well-known data-affiliated companies and how these companies use and misuse user data. Most notably, ex-design ethicist Tristan Harris gives firsthand accounts of the challenges of systemic change through his time at Google. Harris goes on to describe his newer pursuits of establishing hopeful ethical boundaries for consumer technology via his project titled The <em>Center for Humane Technology</em><a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. While the audience gains an eye-opening view into the closed doors of user surveillance in a privatized setting, the point that is most serious is the <strong>lack of control that these companies seem to have over their own technology</strong>. Tech executives have even openly admitted to the only way of protecting their children from their own products: limiting them as much as possible<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>.</p>
+<p><img src="images/tristanharris.jpg" width="25%" style="float:left; padding:10px" /></p>
+<p>Both <em>Data Feminism</em> and <em>The Social Dilemma</em> raise the alarming point of the loss of agency and human individuality through technological automation. Not only are these products designed with bias and potential malicious usage, but they have little to no regulation.</p>
+<p><img src="images/yeshimilner.jpg" width="25%" style="float:right; padding:10px" /></p>
+<p>The existence of projects like The Center for Humane Technology is critical for shining a light on the power of the companies that have such data collection and surveillance tactics. In addition to The Center for Humane Technology, Yeshimabeit Milner’s <em>Data 4 Black Lives</em><a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> has been pivotal in the challenge of disarming Big Data and the direct impact it has on Black communities. Work like this is pushing the needed systemic change to put an end to uncontrolled and unregulated deviciveness of these automated systems.</p>
+<p><font size = "2"></p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://data-feminism.mitpress.mit.edu/pub/frfa9szd/release/4" class="uri">https://data-feminism.mitpress.mit.edu/pub/frfa9szd/release/4</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p><a href="https://digitalcommons.unomaha.edu/jrf/vol24/iss1/22" class="uri">https://digitalcommons.unomaha.edu/jrf/vol24/iss1/22</a><a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p><a href="https://www.humanetech.com/" class="uri">https://www.humanetech.com/</a><a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p><a href="https://www.businessinsider.com/tech-execs-screen-time-children-bill-gates-steve-jobs-2019-9" class="uri">https://www.businessinsider.com/tech-execs-screen-time-children-bill-gates-steve-jobs-2019-9</a><a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p><a href="https://d4bl.org/about.html" class="uri">https://d4bl.org/about.html</a><a href="#fnref5" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
 
 
 
@@ -445,7 +421,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

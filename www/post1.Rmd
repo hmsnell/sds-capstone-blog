@@ -1,5 +1,28 @@
 ---
-title: "My first story"
+title: "The Social Dilemma"
+date: "February 21, 2021"
 ---
 
-It was a dark and stormy night...
+D’Ignazio and Klein's introduction to *Data Feminism* describes the ominous trajectory of how economic, civic, and individual decisions are increasingly being made by automated systems. While there is convenience and efficiency that results of this, the consequences weigh more: many of these automated systems continue to hurt minoritized groups on a global scale (what D'Ignazio and Klein call a (**double-edged sword**)^[https://data-feminism.mitpress.mit.edu/pub/frfa9szd/release/4].  
+
+```{r echo=FALSE, out.width= "30%", out.extra='style="float:right; padding:10px"'}
+knitr::include_graphics("images/algorithm.jpg")
+```
+
+Following a similar narrative, the documentary-drama hybrid titled *The Social Dilemma*^[https://digitalcommons.unomaha.edu/jrf/vol24/iss1/22] contains a series of charged interviews from ex-Silicon Valley tech executives of well-known data-affiliated companies and how these companies use and misuse user data. Most notably, ex-design ethicist Tristan Harris gives firsthand accounts of the challenges of systemic change through his time at Google. Harris goes on to describe his newer pursuits of establishing hopeful ethical boundaries for consumer technology via his project titled The *Center for Humane Technology*^[https://www.humanetech.com/]. While the audience gains an eye-opening view into the closed doors of user surveillance in a privatized setting, the point that is most serious is the **lack of control that these companies seem to have over their own technology**. Tech executives have even openly admitted to the only way of protecting their children from their own products: limiting them as much as possible^[https://www.businessinsider.com/tech-execs-screen-time-children-bill-gates-steve-jobs-2019-9].  
+
+```{r echo=FALSE, out.width= "25%", out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("images/tristanharris.jpg")
+```
+
+Both *Data Feminism* and *The Social Dilemma* raise the alarming point of the loss of agency and human individuality through technological automation. Not only are these products designed with bias and potential malicious usage, but they have little to no regulation.  
+
+```{r echo=FALSE, out.width= "25%", out.extra='style="float:right; padding:10px"'}
+knitr::include_graphics("images/yeshimilner.jpg")
+```
+
+The existence of projects like The Center for Humane Technology is critical for shining a light on the power of the companies that have such data collection and surveillance tactics. In addition to The Center for Humane Technology, Yeshimabeit Milner's *Data 4 Black Lives*^[https://d4bl.org/about.html] has been pivotal in the challenge of disarming Big Data and the direct impact it has on Black communities. Work like this is pushing the needed systemic change to put an end to 
+uncontrolled and unregulated deviciveness of these automated systems.  
+
+
+<font size = "2">
