@@ -1,19 +1,11 @@
 ---
-title: "My website"
+title: "Hannah's SDS Capstone Blog"
 output:
   html_document:
     toc: false
 ---
 
-Write stuff in Markdown here. Like **bold** things and *italic* things. 
+# Welcome to my blog!  
 
-And images:
-
-![](https://media.giphy.com/media/1hqYk0leUMddBBkAM7/giphy.gif)
-
-And don't forget about R code:
-
-```{r}
-knitr::kable(mtcars)
-```
+#### I will be using this site for my personal blog posts documenting my journey through Catherine D’Ignazio and Lauren F. Klein's *Data Feminism*.  
 

@@ -2,4 +2,15 @@
 title: "About Me"
 ---
 
-blah blah blah
+```{r, echo = FALSE, out.width = '50%', fig.align = 'center'}
+knitr::include_graphics("images/newpropic(casual).png")
+```
+
+
+
+I'm Hannah (she/her) and I am a senior at Smith College in Northampton, MA studying Biochemistry and Statistical and Data Sciences (SDS). I am quite passionate about computational biology and biostatistics, especially for applications of efficacy in drug design as well as understanding disease implications through human genetics.  
+
+My passion for life sciences comes in tandem with my ever-growing knowledge and curiosity in bioethics. My lab training has taught me to ask myself not only how to run my intended experiments, but also why my research teams are doing them, and if they should even be done in the first place.  
+One of my favorite bioethicists is Jeantine Lunshof who works in Dr. George Church's lab at Harvard University. Here's a great article by STAT that covers the important work she does to keep the futuristic experiments of the Church lab ethically sound: https://www.statnews.com/2017/02/23/bioethics-harvard-george-church/  
+
+I hope I can provide an interesting prospective on the multifaceted nature of ethics as I report back on my readings through *Data Feminism*. Please reach out to me if you find a similar interest in bioethics or the contents of my blog posts; I would be happy to discuss more!  
