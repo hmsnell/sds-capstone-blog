@@ -17,7 +17,7 @@ This particular chapter in *Data Feminism* also describes the power that many la
 - 
 
 ```{r echo=FALSE, out.width= "40%", out.extra='style="padding:10px"', fig.cap="Matrix of Domination described by Patricia Hill Collins"}
-knitr::include_graphics("images/patriciahillcollins.jpeg")
+knitr::include_graphics("images/patriciahillcollins.jpg")
 ```
 
 
