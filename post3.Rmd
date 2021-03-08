@@ -1,12 +1,10 @@
 ---
-title: "post3"
+title: "The Power in Proactiviy "
 date: "3/7/2021"
 ---
 
-# The Power in Proactivity 
-
 ```{r echo=FALSE, out.width= "40%", out.extra='style="float:center; padding:10px"'}
-knitr::include_graphics("images/detroit.jpg")
+knitr::include_graphics("images/phc.jpg")
 ```
 
 Chapter 2 of *Data Feminism* introduces the alarming map titled Where Commuters Run Over Black Children on the Pointes-Downtown Track. Everything about this map stood out: the text, the bold black dots, each representing a lost life, and most importantly, the magnitude of the issue. The map, however, was far from the first recognition of this problem, as *DF* quotes how many of the residents in the neighborhoods illustrated on this particular map lived this reality every day. The toughest phase of proving such a point to greater Detroit and the rest of the nation occurred during the data collection and validation phase: nobody kept detailed records of these deaths and any information about them wasn't publically available; the final map was a product of leveraged knowledge from a group of community members.  
