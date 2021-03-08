@@ -1,0 +1,14 @@
+---
+title: "The Power in Proactivity"
+date: "3/7/2021"
+---
+
+```{r echo=FALSE, out.width= "30%", fig.align='center'}
+knitr::include_graphics("images/detroit.jpg")
+```
+
+Chapter 2 of *Data Feminism* introduces the alarming map titled Where Commuters Run Over Black Children on the Pointes-Downtown Track. Everything about this map stood out: the text, the bold black dots, each representing a lost life, and most importantly, the magnitude of the issue. The map, however, was far from the first recognition of this problem, as *DF* quotes how many of the residents in the neighborhoods illustrated on this particular map lived this reality every day. The toughest phase of proving such a point to greater Detroit and the rest of the nation occurred during the data collection and validation phase: nobody kept detailed records of these deaths and any information about them wasn't publically available; the final map was a product of leveraged knowledge from a group of community members.  
+
+This case, like others, required proactive attention to save the many lives of young Black children. As data played a major influence in the perception of seriousness of this case, it begs the question: **how do we move towards proactive power? In other words, how can we be more proactive about stopping oppressive systemic powers before they cause lasting damage on a macro level?**  
+
+There is a clear pattern in many of the major data issues mentioned in *DF* and beyond: if any kind of positive solution is introduced at all, it isn't even close to being created until the problem is so big that it is unavoidable. As seen in the events of the Detroit case mentioned above, awareness only arose from a community that could no longer look away from the pain that they witnessed every day. Τhis should never be an acceptable baseline for change, rather the systems governing our communities need to be structured to expose major flaws as severe as losing lives of Black children and not providing the proper support and documentation. These systems require proactive powers that are a part of our communities and wish to support them first, not profit off of them. 
