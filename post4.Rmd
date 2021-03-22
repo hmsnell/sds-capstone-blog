@@ -1,0 +1,12 @@
+---
+title: "Transparency Rather Than Objectivity"
+author: "Hannah Snell"
+date: "3/21/2021"
+output: html_document
+---
+
+  A theme discussed in chapters 3 and 4 of *Data Feminisim* was the idea of objectivity in data communication; that is, the level of awareness one may have for their own persuasive bias in the presentation and communication of results. This is not as simple as it may seem, however. Objectivity in data communication is virtually impossible, because every data scientist comes from a specific and unique background.  
+
+  After discussion with peers from my capstone class, we all agreed that pure objectivity may not always be a quality to strive for as data scientists. Working with impactful data is a taxing task, especially if the numbers represent an experience you can personally relate to, so the emotional labor and drive to push meaningful results forward should not be clouded by neutrality and objectivity. Instead, transparency is necessary to provide the contenxt and purpose of a meaningful analysis. Providing a detailed background of those who worked on the analysis, the purpose of it, and the data origins can help combat the lack of objectivity in some data. 
+  
+  Although transparency as mentioned can provide insights into the persuasive context of an analysis, it is incredibly important to also evaluate the basis and purpose of why the work is being done. Chapter 4 of *Data Feminism* talks about the humbling concept of the fact that *only those who are counted count*. When reading this, it made me realize the responsibility I had not only as a researcher, but also as a student and someone who reads statistical research: the work to objectively and transparently persuade an argument with statistical backing should be under just as much scrutiny by those who consume it, as they have power in the influence of statistical work just as much as the authors do. 
